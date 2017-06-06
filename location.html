@@ -25,7 +25,7 @@
     </div>
 
     <div class="location">
-      <a href="">Location</a>
+      <a href="location.html">Location</a>
     </div>
 
     <div class="menu">
@@ -34,7 +34,7 @@
 
     <!-- Menu -->
     <ul class="vertical menu vmen">
-      <li><a href="top-picks.html">Top Picks</a></li>
+      <li><a class="top-picks" href="top-picks.html">Top Picks</a></li>
       <li><a href="#">News</a></li>
       <li><a href="#">Offers</a></li>
       <li><a href="#">About Us</a></li>
@@ -57,17 +57,24 @@
     <div class="large-6 columns location-left">
       <h1>1Bite2Go</h1>
       <p>Reservations | To Go | Delivery</p>
-      <h2>+886 2 2722 6528</h2>
+      <h2 class="number">+886 2 2722 6528</h2>
       <p>Opening Hours</p>
       <h2>Monday to Friday<br>
         10:00 am - 10:00 pm <br>
-        Saturday, Sunday & Public Holiday
+        Saturday, Sunday &  Public Holiday 
         8:00 am - 10:00 pm
       </h2>
       <p>Address</p>
       <h2>16 Section 5 Xinyi Road <br>
         Xinyi Taipei 11049 Taiwan
       </h2>
+
+      <p>Free Amenities</p>
+
+      <div class="large-12 columns wifi">
+        <img src="src/img/wifi.png" alt="">
+        <img src="src/img/bike.png" alt="">
+      </div>
     </div>
 
 
@@ -92,6 +99,12 @@
       <p>To ensure the safety of our riders, 1Bite2Go delivery may be temporarily unavailable, due to bad weather, traffic conditions or other unforeseen circumstances.</p>
 
       <p>Cannot be used in conjunction with any promotion.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div id="map" style="width: 100%; height: 300px;"></div>
     </div>
   </div>
 
@@ -175,8 +188,11 @@
 
 
 
-
-
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5nprKxqcLrU_8nkslkNMA2YHiYziQais&libraries=places&callback=initMap"></script>
     <script src="assets/js/all.js"></script>
   </body>
   </html>
